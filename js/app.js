@@ -4,9 +4,8 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    navbar.classList.toggle('bx-x');
+    menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-    navbar.style.display = 'block';
 }
 /*==================== scroll sections active link ====================*/
 
@@ -15,7 +14,7 @@ let header = document.querySelector('header');
 header.classList.toggle('sticky', window.scrollY > 100);
 
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
-navbar.classList.remove('bx-x');
+menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 /*==================== scroll reveal ====================*/
 ScrollReveal({
